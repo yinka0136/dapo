@@ -1,0 +1,123 @@
+@import "abstract/mixins.scss";
+@import "abstract/variables.scss";
+
+.navbar {
+  min-height: 8rem;
+  &-nav {
+    .nav-item {
+      cursor: pointer;
+      margin-right: 4.8rem;
+      &:last-child {
+        margin-right: 0 !important;
+      }
+      &.active {
+        .highlight {
+          display: block;
+        }
+        .nav-link {
+          font-weight: 700;
+        }
+      }
+      &:hover {
+        .list {
+          display: block;
+        }
+      }
+
+      .nav-link {
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+        color: $white-100;
+      }
+
+      .list {
+        display: none;
+        position: absolute;
+        transition: 0.3s all ease-in-out;
+        width: 26.8rem;
+        filter: drop-shadow(0rem 0rem 0.8rem rgba(0, 0, 0, 0.25));
+        &_item {
+          background: $black-100;
+          padding: 1.6rem;
+          &:hover {
+            background: $red-100;
+            p {
+              color: $white-100;
+            }
+          }
+          p {
+            font-weight: 400;
+            font-size: 1.4rem;
+            line-height: 1.6rem;
+            color: $black-100;
+            margin-bottom: 0 !important;
+          }
+        }
+      }
+    }
+  }
+  .highlight {
+    display: none;
+    width: 2.4rem;
+    height: 0.3rem;
+    border-radius: 0.5rem;
+    background-color: $white-100;
+  }
+  &-btn {
+    background: $red-100;
+    border-radius: 1.2rem;
+    font-weight: 900;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    text-align: center;
+    color: $white-100;
+    padding: 11px 19px;
+  }
+}
+.my_nav {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: $black-100;
+  z-index: 1000;
+}
+.logo {
+  width: 100%;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 576.5px) {
+  .mobile_hide {
+    display: none;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 576.5px) and (max-width: 768px) {
+  .mobile_hide {
+    display: none;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 768.5px) and (max-width: 992px) {
+  .mobile_hide {
+    display: none;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 992.5px) and (max-width: 1200px) {
+  .desktop_hide {
+    display: none;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1200.5px) {
+  .desktop_hide {
+    display: none;
+  }
+}

@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "./partials/abstract/variables";
+@import "./partials/base/typography";
+@import "./partials/base/base";
+@import "partials/abstract/mixins";
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 576.5px) {
+  .mobile_hide {
+    display: none;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 576.5px) and (max-width: 768px) {
+  .mobile_hide {
+    display: none;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 768.5px) and (max-width: 992px) {
+  .mobile_hide {
+    display: none;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 992.5px) and (max-width: 1200px) {
+  .desktop_hide {
+    display: none;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1200.5px) {
+  .desktop_hide {
+    display: none;
+  }
+}

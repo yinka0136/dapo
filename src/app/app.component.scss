@@ -1,0 +1,380 @@
+@import "abstract/mixins.scss";
+@import "abstract/variables.scss";
+
+.sections {
+  background: $white-100;
+  img {
+    width: 100%;
+  }
+
+  .btn {
+    background: $red-100;
+    border-radius: 1.2rem;
+    box-sizing: border-box;
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 4.2rem;
+    text-align: center;
+    color: $white-100;
+    padding: 1.6rem 3.2rem;
+    transition: 0.3s all ease-out;
+    @include screenSize(S) {
+      font-weight: 700;
+      font-size: 1.6rem;
+      line-height: 2.1rem;
+      padding: 1rem 2rem;
+    }
+    &:focus {
+      box-shadow: none;
+    }
+    &:hover {
+      margin-left: 1rem;
+    }
+  }
+  &_home {
+    padding: 16.4rem 0rem 13rem;
+    @include screenSize(S) {
+      padding: 8rem 4rem 4rem;
+    }
+    &--header {
+      margin-bottom: 4rem;
+      h4 {
+        font-family: $partner_font_bold;
+        font-weight: 700;
+        font-size: 4rem;
+        line-height: 5.2rem;
+        color: $black-100;
+        span {
+          color: $red-100;
+        }
+      }
+    }
+    &--wrapper {
+      img {
+        width: 100%;
+        @include screenSize(S) {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  &_join {
+    position: relative;
+    background: $black-100;
+    text-align: center;
+    padding: 11.5rem 0rem 8.9rem;
+    @include screenSize(S) {
+      padding: 4rem;
+      margin-bottom: 4rem;
+    }
+    h4 {
+      font-family: $partner_font;
+      font-weight: 600;
+      font-size: 3.80478rem;
+      line-height: 5.7rem;
+      text-align: center;
+      color: rgba($white-100, 1);
+      margin-bottom: 7.6rem;
+
+      span {
+        color: $red-100;
+      }
+    }
+  }
+  &_introducing {
+    position: relative;
+    padding: 11rem 0rem 9.2rem;
+    @include screenSize(S) {
+      padding: 4rem;
+    }
+
+    .marg {
+      margin-top: 21.1rem;
+      margin-bottom: 11.3rem;
+      @include screenSize(S) {
+        margin-top: 9rem;
+        margin-bottom: 2rem;
+      }
+    }
+    &--images {
+      position: relative;
+      margin-bottom: 1rem;
+      .abs {
+        position: absolute;
+        right: -1.8rem;
+        top: -11.7rem;
+        width: 63%;
+      }
+    }
+    &--right {
+      h4 {
+        font-family: $partner_font_bold;
+        font-weight: 700;
+        font-size: 2.8rem;
+        line-height: 2.6rem;
+        color: $black-100;
+        margin-bottom: 3.2rem;
+      }
+      p {
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        color: $black-100;
+        margin-bottom: 6.6rem;
+      }
+    }
+  }
+
+  &_according {
+    position: relative;
+    background: rgba($black-100, 1);
+    padding: 7.4rem 17.6rem;
+    @include screenSize(S) {
+      padding: 4rem;
+      margin-bottom: 4rem;
+    }
+    p {
+      font-weight: 400;
+      font-size: 2.8rem;
+      line-height: 4.2rem;
+      color: $white-100;
+    }
+  }
+  &_why {
+    padding: 11rem 0rem 0rem;
+    @include screenSize(S) {
+      padding: 4rem;
+      margin-bottom: 4rem;
+    }
+
+    &--image {
+    }
+    &--left {
+      h4 {
+        font-family: $partner_font_bold;
+        font-weight: 700;
+        font-size: 2.8rem;
+        line-height: 2.6rem;
+        color: $black-100;
+        margin-bottom: 3.2rem;
+      }
+      p {
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        color: $black-100;
+        margin-bottom: 6.6rem;
+      }
+    }
+  }
+
+  &_aim {
+    padding: 12.7rem 0rem 9.2rem;
+    margin-bottom: 30rem;
+    @include screenSize(S) {
+      padding: 4rem;
+      margin-bottom: 4rem;
+    }
+
+    h4 {
+      font-family: $partner_font_bold;
+      font-weight: 800;
+      font-size: 2.95rem;
+      line-height: 5rem;
+      color: $black-100;
+      text-align: center;
+      margin-bottom: 16.8rem;
+    }
+    &--card {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      background: #d9d9d9;
+      padding: 12rem 2.8rem 2rem;
+      box-shadow: 0px 12px 24px rgba(222, 216, 216, 0.15);
+      border-radius: 1rem;
+      min-height: 36.3rem;
+      @include screenSize(S) {
+        padding: 2rem;
+        min-height: 100%;
+      }
+      p {
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 3rem;
+        color: $black-100;
+        text-align: center;
+        text-shadow: 0px 12px 24px rgba(222, 216, 216, 0.15);
+        span {
+          font-size: 2.95rem;
+          line-height: 3rem;
+          text-align: center;
+          color: #fd0000;
+        }
+      }
+      &_top {
+        position: absolute;
+        top: -12.5rem;
+      }
+    }
+
+    .btn_wrapper {
+      display: flex;
+      justify-content: center;
+      margin-top: 4.8rem;
+    }
+  }
+
+  &_started {
+    padding: 0rem 7.3rem 0rem;
+    margin-bottom: 9.4rem;
+    @include screenSize(S) {
+      padding: 4rem;
+      margin-bottom: 4rem;
+    }
+
+    &-main {
+      padding: 19.2rem 9.4rem 6.8rem;
+      @include screenSize(S) {
+        padding: 2rem;
+        img {
+          margin-top: -12rem !important;
+        }
+      }
+      border: 0.5rem solid $black-100;
+      position: relative;
+      img {
+        margin-top: -52rem;
+      }
+      h4 {
+        font-family: $partner_font_bold;
+        font-weight: 800;
+        font-size: 2.95rem;
+        line-height: 5rem;
+        color: $black-100;
+        text-align: center;
+        margin-bottom: 2.2rem;
+      }
+      p {
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 3.5rem;
+        text-align: justify;
+        margin-bottom: 6rem;
+        span {
+          color: $red-100;
+        }
+      }
+
+      .btn_wrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: 4.8rem;
+      }
+    }
+  }
+  &_headline {
+    padding: 0rem 7.3rem 9.2rem;
+
+    @include screenSize(S) {
+      padding: 4rem;
+      margin-bottom: 4rem;
+      &-main_sponsor {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    &-main {
+      img {
+        width: 60%;
+        margin-bottom: 4.4rem;
+      }
+      .head {
+        width: 40%;
+      }
+      h4 {
+        font-family: $partner_font_bold;
+        font-weight: 800;
+        font-size: 4.8rem;
+        line-height: 5rem;
+        color: $black-100;
+        text-align: center;
+        margin-bottom: 4.8rem;
+      }
+      p {
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 3.5rem;
+        text-align: justify;
+        margin-bottom: 10.4rem;
+        span {
+          color: $red-100;
+        }
+      }
+    }
+  }
+  &_footer {
+    background: $black-100;
+    text-align: center;
+    min-height: 17.2rem;
+    display: flex;
+    align-items: center;
+    // padding: 11.5rem 0rem 8.9rem;
+    @include screenSize(S) {
+      padding: 4rem;
+      margin-bottom: 4rem;
+      &-main {
+        flex-direction: column;
+      }
+    }
+    &-main {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h4 {
+        font-family: $partner_font;
+        font-weight: 600;
+        font-size: 2.95rem;
+        line-height: 5rem;
+        color: $white-100;
+      }
+      p {
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 5rem;
+        color: $white-100;
+      }
+      .btn {
+        font-family: $partner_font_bold;
+        padding: 1rem;
+        text-align: center;
+        font-weight: 900;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        min-width: 15rem;
+      }
+    }
+  }
+}
+
+@include screenSize(S) {
+  p {
+    font-size: 1.4rem !important;
+    line-height: 2.1rem !important;
+    margin-bottom: 2rem !important ;
+  }
+  h4 {
+    font-size: 2.4rem !important;
+    line-height: 2.9rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .sections {
+    &--card {
+      margin-bottom: 15rem;
+    }
+  }
+}

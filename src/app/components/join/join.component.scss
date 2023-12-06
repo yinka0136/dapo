@@ -1,0 +1,59 @@
+@import "abstract/mixins.scss";
+@import "abstract/variables.scss";
+
+.relative {
+  position: relative !important;
+}
+.join_us_wrapper {
+  background-image: url("../../../assets/images/form_img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: multiply;
+  @include maxSize(M) {
+    padding: 2rem;
+  }
+  &-form {
+    @include maxSize(M) {
+      border-radius: 1rem;
+    }
+    background-color: $white-100;
+    padding: 2.4rem 3.2rem;
+    @include maxSize($canvas: S) {
+      padding: 2.4rem;
+    }
+    img {
+      width: 12.4rem;
+      margin-bottom: 4.8rem;
+    }
+    h4 {
+      font-family: $partner_font_bold;
+      font-weight: 700;
+      font-size: 2rem;
+      line-height: 2.4rem;
+      margin-bottom: 2.4rem;
+    }
+    p {
+      font-family: $partner_font;
+      font-weight: 400;
+      // font-size: 1.2rem;
+      line-height: 1.6rem;
+      color: $black-100;
+    }
+    input {
+      background: $white-100;
+      border: 0.1rem solid $black-100;
+      border-radius: 1rem;
+      min-height: 4rem;
+      margin-bottom: 2.4rem;
+      @include maxSize(M) {
+        margin-bottom: 0.8rem;
+      }
+    }
+  }
+  &-image {
+  }
+}
+.modal-body {
+  padding: 0rem;
+}
