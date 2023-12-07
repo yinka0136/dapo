@@ -11,7 +11,7 @@ export class AppComponent {
   public showMinimized: boolean = false;
   public activeSection!: string;
 
-  title = 'partner';
+  title = 'cargo';
 
   constructor(@Inject(PLATFORM_ID) private platformId: any) {}
   ngOnInit() {

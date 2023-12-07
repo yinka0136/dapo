@@ -24,9 +24,19 @@
     </svg>
   </div> -->
   <div class="navbar container desktop_hide">
-    <a class="navbar-brand" routerLink="/"
-      ><img src="assets/images/partner.svg" alt=""
-    /></a>
+    <a class="navbar-brand" routerLink="/">
+      <!-- <img src="assets/images/partner.svg" alt=""
+    /> -->
+      <h4
+        style="
+          font-style: italic !important;
+          color: brown;
+          text-transform: uppercase;
+        "
+      >
+        Same Major Cargo
+      </h4>
+    </a>
     <div class="menu-icon" (click)="toggleSidebar()">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -110,11 +120,21 @@
         </li>
         <li>
           <a routerLink="/" (click)="toggleSidebar()">
-            <img
+            <!-- <img
               src="../../../assets/images/partner_logo.svg"
               alt="logo"
               class="logo ms-4"
-            />
+            /> -->
+
+            <h4
+              style="
+                font-style: italic !important;
+                color: brown;
+                text-transform: uppercase;
+              "
+            >
+              Same Major Cargo
+            </h4>
           </a>
         </li>
 

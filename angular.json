@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "partner": {
+    "cargo": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
