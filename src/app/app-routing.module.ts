@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes, ExtraOptions } from '@angular/router';
 import { AppComponent } from './app.component';
+import { TermsComponent } from './components/terms/terms.component';
 
 const routerOptions: ExtraOptions = {
   scrollPositionRestoration: 'enabled',
@@ -17,6 +18,11 @@ const routes: Routes = [
     path: '',
     redirectTo: 'content',
     pathMatch: 'full',
+  },
+
+  {
+    path: 'terms',
+    component: TermsComponent,
   },
 ];
 

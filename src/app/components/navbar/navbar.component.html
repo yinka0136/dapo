@@ -5,9 +5,21 @@
   data-aos-delay="200"
 >
   <div class="container">
-    <a class="navbar-brand" routerLink="/"
-      ><img class="logo" src="assets/images/partner_logo.svg" alt=""
-    /></a>
+    <a class="navbar-brand" routerLink="/">
+      <!-- <img class="logo" src="assets/images/partner_logo.svg" alt=""
+    /> -->
+      <h4
+        style="
+          font-style: italic !important;
+          font-size: 30px;
+          color: brown;
+          text-transform: uppercase;
+          margin-bottom: 0;
+        "
+      >
+        Same Major Cargo
+      </h4>
+    </a>
     <button
       class="navbar-toggler"
       type="button"
@@ -43,16 +55,10 @@
           <div class="highlight"></div>
         </li>
 
-        <li
-          class="nav-item"
-          [class.active]="activeFragment == fragments.SPONSORS"
-        >
-          <a
-            class="nav-link"
-            [routerLink]="'.'"
-            [fragment]="fragments.SPONSORS"
-            >{{ fragments.SPONSORS }}</a
-          >
+        <li class="nav-item" [class.active]="activeFragment == fragments.TERMS">
+          <a class="nav-link" [routerLink]="'.'" [fragment]="fragments.TERMS">{{
+            fragments.TERMS
+          }}</a>
           <div class="highlight"></div>
         </li>
       </ul>
@@ -61,7 +67,7 @@
       data-bs-toggle="modal"
       data-bs-target="#joinUsModal"
       class="btn navbar-btn"
-      >Join Us</a
+      >Contact Us</a
     >
   </div>
 </nav>
