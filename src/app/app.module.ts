@@ -6,7 +6,6 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
-import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { SharedModule } from './shared/shared.module';
 import { JoinComponent } from './components/join/join.component';
 
@@ -18,7 +17,7 @@ import { JoinComponent } from './components/join/join.component';
     FooterComponent,
     JoinComponent,
   ],
-  imports: [BrowserModule, RouterModule, AppRoutingModule, SlickCarouselModule, SharedModule],
+  imports: [BrowserModule, RouterModule, AppRoutingModule, SharedModule],
   providers: [],
   bootstrap: [AppComponent],
 })
