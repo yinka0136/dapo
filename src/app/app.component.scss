@@ -170,9 +170,40 @@
     }
   }
 
+  &_claim {
+    margin-bottom: 30rem;
+    @include screenSize(S) {
+      padding: 4rem;
+      margin-bottom: 4rem;
+    }
+
+    h4 {
+      font-family: $cargo_font_bold;
+      font-weight: 800;
+      font-size: 2.95rem;
+      line-height: 5rem;
+      color: $black-100;
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 1.6rem;
+      line-height: 3rem;
+      color: $black-100;
+      text-shadow: 0px 12px 24px rgba(222, 216, 216, 0.15);
+      span {
+        font-size: 2.95rem;
+        line-height: 3rem;
+        text-align: center;
+        color: #fd0000;
+      }
+    }
+  }
+
   &_aim {
     padding: 12.7rem 0rem 9.2rem;
-    margin-bottom: 30rem;
     @include screenSize(S) {
       padding: 4rem;
       margin-bottom: 4rem;
@@ -254,7 +285,7 @@
       border: 0.5rem solid $black-100;
       position: relative;
       img {
-        margin-top: -52rem;
+        margin-top: -48rem;
       }
       h4 {
         font-family: $cargo_font_bold;
