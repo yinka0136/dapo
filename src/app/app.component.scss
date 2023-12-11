@@ -204,6 +204,8 @@
 
   &_aim {
     padding: 12.7rem 0rem 9.2rem;
+    margin-bottom: 30rem;
+
     @include screenSize(S) {
       padding: 4rem;
       margin-bottom: 4rem;
